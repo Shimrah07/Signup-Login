@@ -22,3 +22,33 @@ function signup(userName)
 }
 
 signup("bob");
+
+
+// in feature/ login branch
+function login(userName, password)
+{
+    let arr2 = ["freud", "sylvia", "nietzche", "sigmund", "charlotte"];
+
+    for(let i = 0; i < arr2.length; i++)
+        {
+            if(arr2[i] == userName)
+            {
+                if(password == "Emp@123")
+                {
+                    console.log("Login Sucessfull...");
+                    return;
+                }
+                else
+                {
+                    console.log("Wrong Password...");
+                    return;
+                }
+
+            }
+        }
+
+        console.log("User Not Found, Please Signup");
+}
+
+
+login("nietzche", "Emp@123");
